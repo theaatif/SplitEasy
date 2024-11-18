@@ -1,0 +1,197 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f1f2e;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background: linear-gradient(145deg, #2a2a3b, #1a1a27);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #e6e6fa;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Contributor Section */
+#contributors .input-section {
+    background: linear-gradient(135deg, #2e2e40, #383856);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Contributor Row */
+.contributor-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+/* Contributor Name and Contribution */
+.contributor-name, .contribution-amount {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222233;
+    color: #e0e0e0;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.contributor-name:focus, .contribution-amount:focus {
+    background-color: #383856;
+    box-shadow: 0 0 8px rgba(72, 144, 224, 0.6);
+    outline: none;
+}
+
+/* Remove Button */
+.remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #ff6666;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    background: linear-gradient(135deg, #497ed8, #335799);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4a8ded, #3a5ca1);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Settlement and Payment Section */
+.result-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #282836, #343447);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    color: #e0e0f2;
+}
+
+.result-section h3 {
+    color: #a6b1e1;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.summary {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    background: rgba(72, 144, 224, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.summary p {
+    color: #e0e0fa;
+    margin: 4px 0;
+}
+
+/* Payment Card */
+.payment-card {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #3d3d5e, #45457a);
+    color: #e4e4ff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.payment-card:hover {
+    background: linear-gradient(135deg, #45457a, #5656a2);
+    transform: scale(1.02);
+}
+
+/* Right Scrollbar for Mobile */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: #1f1f2e;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .contributor-name, .contribution-amount, .remove-button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .summary, .payment-card {
+        font-size: 0.85em;
+    }
+
+   
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Splitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Splitter</h1>
+        <div id="contributors">
+            <div class="input-section">
+                <div class="contributor-row">
+                    <input type="text" class="contributor-name" placeholder="Name" />
+                    <input type="number" class="contribution-amount" placeholder="Contribution (INR)" />
+                    <button class="remove-button" onclick="removeContributor(this)">Remove</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="addPerson">Add Contributor</button>
+                <button id="calculate">Calculate Settlement</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <div id="results" class="result-section"></div>
+    </div>
+   <!-- Developed by Aatif -->
+    <script src="script.js"></script>
+</body>
+</html>
