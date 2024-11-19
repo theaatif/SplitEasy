@@ -201,23 +201,26 @@ button:active {
     margin-top: 20px;
     height: 30px;
  }
- .text{
+  .text{
     font-weight: 700;
     color: white;
-    transition: opacity 1s 0s ease-in-out;
+    /* text-align: center; */
+    transition: opacity 0s 0s ease-in-out;
  }
 
-footer i{
-    opacity: 0;
-    transition: opacity 1s 0s ease-out;
+footer .logo{
+    opacity: 0; 
+    font-weight: 700;
+    transition: opacity 0s 0s ease-in-out;
+
 }
 
-.text:hover{
+.text:active{
     opacity: 0;
 }
 
-.text:hover ~ i{
+.text:active ~ .logo{
     opacity: 1;
-    transform: translateX(-100px);
+    transform: translateY(-20px);
 
 }
