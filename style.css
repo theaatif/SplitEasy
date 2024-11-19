@@ -191,7 +191,33 @@ button:active {
 
     .summary, .payment-card {
         font-size: 0.85em;
-    }
+    } 
+}
+ /* footer water mark  */
+ footer{
+    background: linear-gradient(135deg, #45457a, #5656a2);
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+    height: 30px;
+ }
+ .text{
+    font-weight: 700;
+    color: white;
+    transition: opacity 1s 0s ease-in-out;
+ }
 
-   
+footer i{
+    opacity: 0;
+    transition: opacity 1s 0s ease-out;
+}
+
+.text:hover{
+    opacity: 0;
+}
+
+.text:hover ~ i{
+    opacity: 1;
+    transform: translateX(-100px);
+
 }
